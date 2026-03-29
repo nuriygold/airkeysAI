@@ -293,6 +293,39 @@ airkeysAI/
 
 ---
 
+## Remote Access & Deployment
+
+By default, AirKeys is only accessible on your local Wi-Fi network. For hackathons, demos, or remote access from different networks, create a **public HTTPS tunnel** using `localhost.run` (no account or setup required).
+
+### One-Command Public Tunnel
+
+In a new Terminal, run:
+
+```bash
+ssh -R 80:localhost:8766 nokey@localhost.run
+```
+
+You'll get output like:
+
+```
+forwarding https://xxxx-xxxx-xxxx.localhost.run → http://localhost:8766
+```
+
+Copy that public URL and share it. Anyone on any network can now access your AirKeys keyboard.
+
+**Why localhost.run:**
+- ✅ No account required
+- ✅ No API key or authentication
+- ✅ Automatic HTTPS
+- ✅ Free forever
+- ✅ One SSH command — no setup
+
+### Hackathon Submission
+
+For hackathon submissions (Devpost, etc.), submit the public localhost.run URL as your **demo link**. Users can connect their iPad to your keyboard from anywhere.
+
+---
+
 ## Hackathon
 
 AirKeys AI was built for **LovHack Season 2** — a hackathon celebrating creative technology, human-AI collaboration, and tools that make everyday workflows more expressive.
