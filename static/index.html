@@ -249,10 +249,11 @@
   <div id="preview"><span id="preview-text"></span></div>
 
   <div id="topbar" style="display:flex;gap:var(--gap);margin-bottom:4px;">
+    <div class="tab-btn" onclick="sendCommand('summarize')" id="btn-summarize" style="color:#00D4FF;border-color:#00D4FF;flex:1;">/summarize</div>
+    <div class="tab-btn" onclick="sendCommand('translate')" id="btn-translate" style="color:#00D4FF;border-color:#00D4FF;flex:1;">/translate</div>
     <div class="tab-btn active" onclick="showLayer('main')" id="tab-main-top">ABC</div>
     <div class="tab-btn" onclick="showLayer('fn')" id="tab-fn-top">F1-12</div>
     <div class="tab-btn" onclick="clearPreview()" id="tab-clear-top">Clear</div>
-    <div class="tab-btn" onclick="sendN8n()" id="tab-n8n-top" style="color:#30d158;border-color:#1a3a2a;">⚡n8n</div>
   </div>
 
   <div id="keyboard">
@@ -517,6 +518,18 @@ function showN8nResponse(text) {
   // Also update the preview buffer so user can see what was typed
   buffer = text;
   updatePreview();
+}
+
+function sendCommand(cmd) {
+  const text = buffer.trim();
+  if (!text) {
+    showToast(`Type text, then tap /${cmd}`);
+    return;
+  }
+  send({ type: 'text', value: `/${cmd} ${text}` });
+  buffer = '';
+  updatePreview();
+  showToast(`${cmd.charAt(0).toUpperCase() + cmd.slice(1)} triggered…`);
 }
 
 function sendN8n() {
