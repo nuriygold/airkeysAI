@@ -248,6 +248,13 @@
   <div id="n8n-response"><div id="n8n-label">⚡ n8n response</div><span id="n8n-text"></span></div>
   <div id="preview"><span id="preview-text"></span></div>
 
+  <div id="topbar" style="display:flex;gap:var(--gap);margin-bottom:4px;">
+    <div class="tab-btn active" onclick="showLayer('main')" id="tab-main-top">ABC</div>
+    <div class="tab-btn" onclick="showLayer('fn')" id="tab-fn-top">F1-12</div>
+    <div class="tab-btn" onclick="clearPreview()" id="tab-clear-top">Clear</div>
+    <div class="tab-btn" onclick="sendN8n()" id="tab-n8n-top" style="color:#30d158;border-color:#1a3a2a;">⚡n8n</div>
+  </div>
+
   <div id="keyboard">
     <!-- Row 1: numbers -->
     <div class="row" id="row-num"></div>
