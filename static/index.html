@@ -108,6 +108,7 @@
     flex-direction: column;
     gap: var(--gap);
     flex: 1;
+    padding-bottom: 30px;
   }
   .row {
     display: flex;
@@ -175,9 +176,9 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 8px;
+    padding: 4px 6px;
     text-align: center;
-    font-size: 11px;
+    font-size: 9px;
     color: var(--text-dim);
     cursor: pointer;
   }
@@ -442,7 +443,7 @@ function makeKey(label, opts = {}) {
 }
 
 function buildKeyboard() {
-  const nums = ['1','2','3','4','5','6','7','8','9','0','-','='];
+  const nums = ['1','2','3','4','5','6','7','8','9','0','-','/'];
   const q    = ['q','w','e','r','t','y','u','i','o','p'];
   const a    = ['a','s','d','f','g','h','j','k','l',';',"'"];
   const z    = ['z','x','c','v','b','n','m',',','.'];
