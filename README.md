@@ -1,3 +1,7 @@
+Here's the full updated README:
+
+---
+
 # AirKeys AI
 
 > **Turn your iPad into an intelligent wireless keyboard for your Mac — with three layers of AI built in.**
@@ -18,6 +22,7 @@
   <img src="https://img.shields.io/badge/websocket-asyncio-green?style=flat-square" />
   <img src="https://img.shields.io/badge/claude-3.5%20sonnet-purple?style=flat-square" />
   <img src="https://img.shields.io/badge/license-MIT-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/OSI%20approved-✓-brightgreen?style=flat-square" />
   <img src="https://img.shields.io/badge/hackathon-LovHack%20S2-red?style=flat-square" />
 </p>
 
@@ -359,5 +364,7 @@ Pull requests are welcome. For major changes, please open an issue first.
 ## License
 
 MIT © [Nuriy Gold](https://github.com/nuriygold) / Nuriy Inc.
+
+AirKeys AI is released under the [MIT License](LICENSE), an [OSI-approved open source license](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this software under its terms.
 
 See [LICENSE](LICENSE) for full text.
